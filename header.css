@@ -1,0 +1,189 @@
+.header {
+  height: 60px;
+  width: 100%;
+  min-width: 950px;
+  background-color:  #131A22;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header-left, .header-right {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  height: 80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  column-gap: 1px;
+}
+
+
+.logo, .local, .pesquisa, .conta-lista, .devolucoes-pedidos, .cart {
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid 1.85px transparent;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+}
+.logo:hover, .local:hover, .conta-lista:hover, .devolucoes-pedidos:hover, .cart:hover {
+  border-color: white;
+}
+
+
+.logo img {
+  height: 60%;
+  margin-top: 3px;
+}
+
+
+.local img {
+  height: 15px;
+  margin-right: 4px;
+  margin-top: 13px;
+}
+.local div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+.local div .ola {
+  font-size: 12px;
+  font-weight: 300;
+}
+.local div .selecione-endereco {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.pesquisa {
+  flex: 1;
+  height: 65%;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.pesquisa input {
+  height: 100%;
+  flex: 1;
+  border: none;
+  font-size: 15.2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 500;
+}
+.pesquisa input:focus {
+  outline: none;
+}
+.pesquisa button {
+  height: 100%;
+  width: 46px;
+  border: none;
+  background-color: rgb(255, 189, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pesquisa button img {
+  height: 55%;
+}
+.pesquisa button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 167, 36);
+}
+
+
+.conta-lista div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+.conta-lista div .ola {
+  font-size: 12px;
+  font-weight: 300;
+}
+.conta-lista div .conta-lista-open {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.devolucoes-pedidos div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+.devolucoes-pedidos div .devolucoes {
+  font-size: 12px;
+  font-weight: 300;
+}
+.devolucoes-pedidos div .e-pedidos {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart-left {
+  height: 100%;
+  display: flex;
+  justify-content: bottom;
+  align-items: center;
+  position: relative;
+}
+.cart-left img {
+  height: 90%;
+  object-fit: contain;
+}
+.cart-left .cart-num {
+  position: absolute;
+  margin: 0;
+  width: 25px;
+  bottom: 20px;
+  right: 6px;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 125, 38);
+}
+.cart p {
+  margin-bottom: 0px;
+  margin-left: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+.header-nav {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(35, 47, 62);
+  display: flex;
+}
+.header-nav a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+.header-nav a:hover {
+  border: 1px solid white;
+}

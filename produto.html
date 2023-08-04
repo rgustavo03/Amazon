@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="header.css"/>
+	<link rel="stylesheet" href="produto-view.css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+	
+	<title>Product Page</title>
+</head>
+
+<body onload="buscaProduto(), verifyCart(), cartNum()">
+	
+	<header class="header">
+		<div class="header-left">
+			<a class="logo" href="amazon.html">
+				<img src="src/amazon-logo.png">
+			</a>
+
+			<a class="local">
+				<img src="src/pin.jpg">
+				<div>
+					<div class="ola">Olá</div>
+					<div class="selecione-endereco">Selecione o endereço</div>
+				</div>
+			</a>
+		</div>
+
+		<form class="pesquisa" action="search.html?search="  method="GET">
+			<input type="text" name="search" placeholder="Pesquisa Amazon.com.br">
+			<button type="submit"><img src="src/lupa.png"></button>
+		</form>
+
+		<div class="header-right">
+			<a class="conta-lista">
+				<div>
+					<div class="ola">Olá, Gustavo</div>
+					<div class="conta-lista-open">Contas e Listas &#9660;</div>
+				</div>
+			</a>
+
+			<a href="" class="devolucoes-pedidos">
+				<div>
+					<div class="devolucoes">Devoluções</div>
+					<div class="e-pedidos">e Pedidos</div>
+				</div>
+			</a>
+
+			<a href="cart.html" class="cart">
+				<div class="cart-left">
+					<img src="src/cart-a.png">
+					<p id="cartNum" class="cart-num"></p>
+				</div>
+				<p>Carrinho</p>
+			</a>
+		</div>
+	</header>
+
+	<div class="header-nav">
+		<a href="">Venda na Amazon</a>
+		<a href="">Mais vendidos</a>
+		<a href="">Prime &#9660</a>
+		<a href="">Ofertas do dia</a>
+		<a href="">Novidades na Amazon</a>
+		<a href="">Música</a>
+		<a href="">Livros</a>
+		<a href="">Atendimento ao Cliente</a>
+		<a href="">Ebooks Kindle</a>
+		<a href="">Eletrônicos</a>
+		<a href="">Computadores</a>
+	</div>
+
+	<main>
+
+		<section class="produto-view">
+			<div class="produto-foto">
+				<div id="chooseImg" class="chooseImg">
+					<!--
+					<div class="chooseContainerButton">
+						<button><img src="img/cafebaggio/cafebaggio_1.jpg"></button>
+					</div>
+					-->
+				</div>
+				<div id="produtoImg" class="produtoImg">
+					<!--
+					<img src="img/cafebaggio/cafebaggio_1.jpg">
+					-->
+				</div>
+			</div>
+			<!--------------------------------------------------------->
+			<!--------------------------------------------------------->
+			<!--------------------------------------------------------->
+			<div id="produto-info" class="produto-info">
+				<div id="infoTitulo" class="titulo">Desconectado</div>
+				<div id="precoContainer1" class="preco-container">
+					<div class="cifrao">R$</div>
+				</div>
+				
+				<!--
+				<table id="tabela" class="tabela">
+					<tbody>
+							<tr>
+								<td class="col-caracteristica">Marca</td>
+								<td class="col-valor">SAMSUNG</td>
+							</tr>
+							<tr>
+								<td class="col-caracteristica">Nome do modelo</td>
+								<td class="col-valor">Galaxy S21 FE 5G</td>
+							</tr>
+							<tr>
+								<td class="col-caracteristica">Operadora de celulares e tecnologia sem fio</td>
+								<td class="col-valor">Todas as Operadoras</td>
+							</tr>
+							<tr>
+								<td class="col-caracteristica">Sistema operacional</td>
+								<td class="col-valor">Android 11.0</td>
+							</tr>
+							<tr>
+								<td class="col-caracteristica">Tecnologia celular</td>
+								<td class="col-valor">5G</td>
+							</tr>
+					</tbody>
+				</table>
+				-->
+				<!--
+				<div class="sobre-produto">
+					<p>Sobre esse item</p>
+					<ul id="itens-sobre" class="itens-sobre">
+						<li>𝗖𝗔𝗙𝗙𝗘̀.𝗖𝗢𝗠 - Um café premium de alta qualidade com notas intensas. Possui as características necessárias para um café marcante e prolongado: bastante corpo, adstringência moderada e livre de acidez.</li>
+						<li>𝗧𝗢𝗥𝗥𝗔𝗗𝗢 𝗘 𝗠𝗢𝗜́𝗗𝗢 - A cremosidade e o sabor do café torrado e moído que só Baggio Café proporciona.</li>
+						<li>𝗦𝗔𝗕𝗢𝗥 𝗘𝗫𝗖𝗘𝗣𝗖𝗜𝗢𝗡𝗔𝗟 - Experimente o incrível sabor de um verdadeiro café brasileiro. Os cafés Baggio possuem sabor delicioso e delicado, corpo e aroma excepcionais.</li>
+						<li>𝗚𝗥𝗔̃𝗢𝗦 𝗗𝗘 𝗤𝗨𝗔𝗟𝗜𝗗𝗔𝗗𝗘 - Os grãos Baggio Café são cultivados em Mogiana Paulista e Sul de Minas Gerais - região que oferece as condições ideais para a produção de cafés.</li>
+						<li>𝗦𝗔𝗕𝗢𝗥 𝗣𝗥𝗘𝗠𝗜𝗔𝗗𝗢 - A Baggio Café já coleciona 13 prêmios pela ABIC nas categorias de "Melhores da Qualidade" e "Consistência e Qualidade". Você saberá exatamente por que assim que tomar seu primeiro gole.</li>
+						<li>𝗖𝗘𝗥𝗧𝗜𝗙𝗜𝗖𝗔𝗗𝗔 𝗣𝗘𝗟𝗔 𝗕𝗦𝗖𝗔 - A Baggio Café é certificada pela Brazil Specialty Coffee Association, única instituição brasileira a certificar lotes com monitoramento de selos de controle de qualidade de cafés especiais.</li>
+					</ul>
+				</div>
+				-->
+				<!--
+				<div id="desc-produto" class="desc-produto">
+					<p class="desc-produto-titulo">Descrição</p>
+				</div>
+				-->
+
+			</div>
+			<!--------------------------------------------------------->
+			<!--------------------------------------------------------->
+			<!--------------------------------------------------------->
+			<div class="produto-comprar">
+				<div class="comprar-info">
+					<div id="precoContainer2" class="preco-container">
+						<div class="cifrao">R$</div>
+					</div>
+					<div class="frete">
+						<div style="white-space: nowrap;">Entrega GRÁTIS: <div class="data">2 - 13 de Junho.</div><a href="">Ver detalhes</a></div>
+					</div>
+					<div class="local-frete">Enviar para Fortaleza</div>
+					<div class="estoque">Em estoque</div>
+					<div id="qtdCart" class="add-quantidade">
+						<!---->
+						<div style="display: flex; align-items: center;">
+							<p>Quantidade: </p>
+							<select id="qtdItem" class="select-quantidade" name="quantidade">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<!---->
+					</div>
+					<div id="addToCartContainer" class="add-cart-container">
+						<!--
+							<button id="addToCartButton" class="add-cart-button">Adicionar ao carrinho</button>
+						-->
+					</div>
+					<div id="comprarContainer" class="comprar-container">
+						<!--
+						<button id="comprarButton" class="comprar-button">Comprar</button>
+						-->
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<script type="module" src="javascript.js"></script>
+
+</body>
+</html>

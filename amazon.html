@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="header.css"/>
+	<link rel="stylesheet" href="slide.css"/>
+	<link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+	<title>Página inicial</title>
+</head>
+
+<body onload="mostrarProdutos(), slide(), cartNum()">
+	
+	<header id="header" class="header">
+		<div class="header-left">
+			<a href="amazon.html" class="logo">
+				<img src="src/amazon-logo.png">
+			</a>
+
+			<a class="local">
+				<img src="src/pin.jpg">
+				<div>
+					<div class="ola">Olá</div>
+					<div class="selecione-endereco">Selecione o endereço</div>
+				</div>
+			</a>
+		</div>
+
+		<form class="pesquisa" action="search.html?search="  method="GET">
+			<input type="text" name="search" placeholder="Pesquisa Amazon.com.br">
+			<button type="submit"><img src="src/lupa.png"></button>
+		</form>
+
+		<div class="header-right">
+			<a class="conta-lista">
+				<div>
+					<div class="ola">Olá, Gustavo</div>
+					<div class="conta-lista-open">Contas e Listas &#9660;</div>
+				</div>
+			</a>
+
+			<a href="" class="devolucoes-pedidos">
+				<div>
+					<div class="devolucoes">Devoluções</div>
+					<div class="e-pedidos">e Pedidos</div>
+				</div>
+			</a>
+
+			<a href="cart.html" class="cart">
+				<div class="cart-left">
+					<img src="src/cart-a.png">
+					<p id="cartNum" class="cart-num"></p>
+				</div>
+				<p>Carrinho</p>
+			</a>
+		</div>
+	</header>
+
+	<div class="header-nav">
+		<a href="">Venda na Amazon</a>
+		<a href="">Mais vendidos</a>
+		<a href="">Prime &#9660</a>
+		<a href="">Ofertas do dia</a>
+		<a href="">Novidades na Amazon</a>
+		<a href="">Música</a>
+		<a href="">Livros</a>
+		<a href="">Atendimento ao Cliente</a>
+		<a href="">Ebooks Kindle</a>
+		<a href="">Eletrônicos</a>
+		<a href="">Computadores</a>
+	</div>
+
+
+	<section class="slide-section">
+		<button id="slide-button-left" class="arrow-left control" aria-label="previous"><img src="slide/pre.png"></button>
+		<button id="slide-button-right" class="arrow-right control" aria-label="next"><img src="slide/next.png"></button>
+
+		<div class="gallery-wrapper" id="gallery-wrapper">
+			<div id="gallery" class="gallery">
+				<!--
+				<a href="www.google.com" class="item current-item"><img src="slide/s1.jpg"></a>
+				-->
+			</div>
+		</div>
+
+		<div class="things">
+
+			<div class="things-item">
+				<p>Echo e Fire TV com Alexa</p>
+				<div class="things-boxes-container-1">
+					<a href="" class="things-box-1">
+						<img src="top/echo_pop.jpg">
+						<p>Novo Echo Pop</p>
+					</a>
+					<a href="" class="things-box-1">
+						<img src="top/echo_dot_3.jpg">
+						<p>Echo Dot 3° geração</p>
+					</a>
+					<a href="" class="things-box-1">
+						<img src="top/fire_tv_stick.jpg">
+						<p>Fire TV Stick</p>
+					</a>
+					<a href="" class="things-box-1">
+						<img src="top/echo_dot_relogio_4.jpg">
+						<p>Echo Dot com relógio 4° Ger</p>
+					</a>
+				</div>
+				<div>
+					<a class="things-item-login" href="">Confira todos os Dispositivos Amazon</a>
+				</div>
+			</div>
+
+			<div class="things-item">
+				<p>Frete GRÁTIS no seu primeiro pedido</p>
+				<a href="" class="things-box-2">
+					<img src="top/casal.jpg">
+				</a>
+				<a class="things-item-login" href="">Saiba como aproveitar</a>
+			</div>
+
+			<div class="things-item">
+				<p>Compre usando pontos Livelo</p>
+				<a href="" class="things-box-2">
+					<img src="top/mulher.jpg">
+				</a>
+				<a class="things-item-login" href="">Confira como resgatar os pontos</a>
+			</div>
+
+			<div class="things-item things-login">
+				<p>Acesse uma conta para ter a melhor experiência</p>
+				<a class="things-item-login-button" href="">Fazer login de forma segura</a>
+			</div>
+		</div>
+	</section>
+	
+
+	<main>
+		<div id="produtos-novos-container" class="produtos-container">
+			<div class="produtos-container-titulo">Produtos novos</div>
+			<button class="produtos-container-arrow-left"><</button>
+			<button class="produtos-container-arrow-right">></button>
+			<div id="produtos-novos-container-produtos" class="produtos-container-produtos">
+				<!--
+				produto
+				-->
+			</div>
+		</div>
+	</main>
+
+	<script type="module" src="javascript.js"></script>
+	<script src="slide.js"></script>
+	<script src="produto_slide.js"></script>
+
+</body>
+</html>

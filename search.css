@@ -1,0 +1,86 @@
+body {
+    background-color: white;
+}
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.filter-section {
+    flex: 1;
+    padding-top: 11px;
+    padding-left: 9px;
+}
+.filter-preco {
+    font-size: 15px;
+}
+.filter-preco-titulo {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.filter-preco-opcao{
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.filter-preco-opcao:hover {
+    color: brown;
+}
+
+
+.search-section {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+.search-titulo {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 11px;
+    padding-left: 0;
+}
+.search-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: space-between;
+}
+
+
+.produto-container {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    color: black;
+}
+.produto-img {
+    width: 100%;
+    aspect-ratio : 1 / 1;
+    object-fit: contain;
+}
+.produto-titulo {
+    font-size: 17px;
+}
+.produto-titulo:hover {
+    color: brown;
+}
+.produto-preco {
+    margin: 0;
+    display: flex;
+}
+.produto-preco p {
+    font-size: 13px;
+}
+.produto-preco .preco-casa {
+    font-size: 27px;
+    margin-top: -3px;
+}

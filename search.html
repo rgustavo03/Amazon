@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="header.css"/>
+	<link rel="stylesheet" href="search.css"/>
+	<link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+	<title>Amazon</title>
+</head>
+
+<body onload="search(), cartNum()">
+	
+<header id="header" class="header">
+	<div class="header-left">
+		<a href="amazon.html" class="logo">
+			<img src="src/amazon-logo.png">
+		</a>
+
+		<a class="local">
+			<img src="src/pin.jpg">
+			<div>
+				<div class="ola">Olá</div>
+				<div class="selecione-endereco">Selecione o endereço</div>
+			</div>
+		</a>
+	</div>
+
+	<form class="pesquisa" action="search.html?search="  method="GET">
+		<input type="text" id="search" name="search" placeholder="Pesquisa Amazon.com.br">
+		<button type="submit"><img src="src/lupa.png"></button>
+	</form>
+
+	<div class="header-right">
+		<a class="conta-lista">
+			<div>
+				<div class="ola">Olá, Gustavo</div>
+				<div class="conta-lista-open">Contas e Listas &#9660;</div>
+			</div>
+		</a>
+
+		<a href="" class="devolucoes-pedidos">
+			<div>
+				<div class="devolucoes">Devoluções</div>
+				<div class="e-pedidos">e Pedidos</div>
+			</div>
+		</a>
+
+		<a href="cart.html" class="cart">
+			<div class="cart-left">
+				<img src="src/cart-a.png">
+				<p id="cartNum" class="cart-num"></p>
+			</div>
+			<p>Carrinho</p>
+		</a>
+	</div>
+</header>
+
+<div class="header-nav">
+	<a href="">Venda na Amazon</a>
+	<a href="">Mais vendidos</a>
+	<a href="">Prime &#9660</a>
+	<a href="">Ofertas do dia</a>
+	<a href="">Novidades na Amazon</a>
+	<a href="">Música</a>
+	<a href="">Livros</a>
+	<a href="">Atendimento ao Cliente</a>
+	<a href="">Ebooks Kindle</a>
+	<a href="">Eletrônicos</a>
+	<a href="">Computadores</a>
+</div>
+
+<main>
+	<section class="filter-section">
+		<!---->
+		<!---->
+	</section>
+
+	<section class="search-section">
+		<div class="search-titulo">Resultados</div>
+
+		<div id="search-produtos" class="search-produtos">
+			<!--
+			<a href="" class="produto-container">
+				<img class="produto-img" src="img/cafebaggio/cafebaggio_1.jpg" alt="">
+				<p class="produto-titulo">Cafe Baggio</p>
+				<div class="produto-preco"><p>R$</p><p class="preco-casa">30</p><p class="preco-centavos">50</p></div>
+			</a>
+			-->
+		</div>
+	</section>
+</main>
+
+<script type="module" src="javascript.js"></script>
+
+</body>
+</html>

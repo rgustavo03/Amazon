@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="compra.css"/>
+
+  <title>Finalizar compra</title>
+</head>
+
+<body onload="compraUnicoItem()">
+
+  	<header class="header">
+			<a class="logo" href="amazon.html">
+				<img src="src/amazon_logo_black.png">
+			</a>
+			<div class="finalizar">
+				<p>Finalizar a compra(1 item)</p>
+			</div>
+	</header>
+
+	<main>
+		<div class="left">
+			<div class="endereco-container">
+				<div class="endereco-container-titulo"><p class="num">1</p><p class="nome">Endereço de entrega</p></div>
+				<div class="endereco-container-dados">
+					<p id="nome">Fulano de tal</p>
+					<p id="endereco">Rua não sei aonde</p>
+					<p id="complemento">complemento endereco</p>
+					<p id="cidade-cep">Fortaleza, cep</p>
+				</div>
+				<div class="endereco-container-alterar"><a>Alterar</a></div>
+			</div>
+
+			<div class="metodo-pagamento-container">
+				<div class="metodo-pagamento-container-titulo"><p class="num">2</p><p class="nome">Método de pagamento</p></div>
+				<div class="metodo-pagamento-container-dados">
+					<div class="metodo">
+						<img src="src/boleto.png" alt="">
+						<p>Boleto</p>
+					</div>
+					<p class="cupom-titulo">Resgate um vale-presente ou código promocional</p>
+					<div class="cupom">
+						<input id="cupom-input" type="text" placeholder="Insira o código"><input id="cupom-submit" type="submit" value="Cadastrar">
+					</div>
+				</div>
+				<div class="metodo-pagamento-container-alterar"><a>Alterar</a></div>
+			</div>
+
+			<div class="ofertas-container">
+				<div class="ofertas-container-titulo"><p class="num">3</p><p class="nome">Ofertas</p></div>
+			</div>
+
+			<div class="revisar-envio">
+				<div class="revisar-envio-titulo"><p class="num">4</p><p class="nome">Revisar itens e envio</p></div>
+				<div class="revisar-envio-itens">
+
+					<div class="revisar-envio-itens-titulo">
+						<p class="estimada">Entrega estimada: 13 Jul 2023</p>
+						<p class="info">Itens enviados de Amazon.com.br</p>
+					</div>
+
+					<div class="revisar-envio-itens-produtos-frete">
+						<div id="revisar-envio-itens-produtos" class="revisar-envio-itens-produtos">
+							<!--
+							<div class="produto" style="background-color: aquamarine;">
+								<div class="produto-img">
+									<img src="img/cafebaggio/cafebaggio_1.jpg" alt="">
+								</div>
+								<div class="produto-info">
+									<p id="produto-nome">Caffe Bagio premium Caffe Bagio premium Caffe Bagio premium</p>
+									<div id="produto-preco"><p id="preco">R$ 30,</p><p id="centavos">50</p></div>
+									<div id="produto-qtd">3</div>
+								</div>
+							</div>
+							-->
+						</div>
+						<div id="revisar-envio-itens-frete" class="revisar-envio-itens-frete">
+							<p class="titulo">Prazo de entrega</p>
+							<!--<p class="frete">R$ 13,90 Entrega Padrão</p>-->
+						</div>
+					</div>
+
+				</div>
+				<div class="revisar-envio-finalizar">
+					<div id="revisar-envio-div-btn" class="revisar-envio-div-btn">
+						<!--<button class="revisar-envio-btn-finalizar">Finalizar pedido</button>-->
+					</div>
+					<div class="revisar-envio-finalizar-preco-info">
+						<div id="revisar-envio-finalizar-preco-info-total" class="revisar-envio-finalizar-preco-info-total"><p>Total do pedido:</p></div>
+						<p class="revisar-envio-finalizar-preco-info-p">Ao fazer seu pedido, você concorda com as Condições de Uso da Amazon. Por favor verifique a Notificação de Privacidade, Notificação de Cookies e a Notificação de Anúncios Baseados em Interesse.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="table">
+				<div class="comprar-container">
+					<div id="comprar-container-1" class="comprar-container-1">
+						<!--<button class="btn-finalizar">Finalizar pedido</button>-->
+						<p>Ao fazer seu pedido, você concorda com as Condições de Uso da Amazon. Por favor verifique a Notificação de Privacidade, Notificação de Cookies e a Notificação de Anúncios Baseados em Interesse.</p>
+					</div>
+	
+					<div class="comprar-container-2">
+						<p class="comprar-container-2-titulo">Resumo do pedido</p>
+						<table class="comprar-container-2-table">
+							<tbody>
+								<tr id="">
+									<td class="col-caracteristica">Itens:</td>
+									<td id="items" class="col-valor">--</td>
+								</tr>
+								<tr>
+									<td class="col-caracteristica">Frete e manuseio:</td>
+									<td id="frete-manuseio" class="col-valor">--</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	
+					<div class="comprar-container-3">
+						<div id="comprar-container-3-total" class="comprar-container-3-total">
+							<p>Total do pedido:</p>
+						</div>
+					</div>
+				</div>
+				<div class="info-container">
+					<a href="">Como os fretes são calculados?</a>
+					<a href="">Por que meu pedido não é elegível para a entrega Prime?</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="module" src="javascript.js"></script>
+
+</body>
+</html>
